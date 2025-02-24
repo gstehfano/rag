@@ -1,18 +1,21 @@
-name: Deploy to Server
+# Nome do Projeto
 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+Uma breve descrição do seu projeto, o que ele faz e qual o seu propósito.
 
-      - name: Build and Deploy
-        run: |
-          npm install
-          npm run build
-          curl -X POST https://seu-servidor-de-deploy.com/deploy
+## Como Usar
+
+Explique como usar o seu projeto. Se for um projeto de código, você pode adicionar instruções sobre como rodar o projeto localmente, configurar um ambiente, ou até mesmo como rodar os testes.
+
+Exemplo:
+```bash
+# Passo 1: Clone o repositório
+git clone https://github.com/username/repository-name.git
+
+# Passo 2: Navegue para o diretório do projeto
+cd nome-do-projeto
+
+# Passo 3: Instale as dependências
+npm install
+
+# Passo 4: Execute o projeto
+npm start
